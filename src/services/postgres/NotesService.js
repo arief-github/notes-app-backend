@@ -16,7 +16,7 @@ class NotesService {
 
         // query for add data
         const query = {
-            text: 'INSERT INTO notes VALUES($1, $2, $3, $4, $5) RETURNING id',
+            text: 'INSERT INTO notes VALUES($1, $2, $3, $4, $5, $6) RETURNING id',
             values: [id, title, body, tags, createdAt, updateAt],
         }
 
